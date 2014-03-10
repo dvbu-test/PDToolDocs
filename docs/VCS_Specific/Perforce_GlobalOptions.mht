@@ -1,0 +1,1763 @@
+From: "Saved by Windows Internet Explorer 8"
+Subject: Global Options
+Date: Fri, 29 Jul 2011 19:46:00 -0400
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01CC4E28.24750950"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.1.7601.17609
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01CC4E28.24750950
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.perforce.com/perforce/doc.current/manuals/cmdref/o.gopts.html
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML lang=3Den xmlns=3D"http://www.w3.org/1999/xhtml" =
+xml:lang=3D"en"><HEAD><TITLE>Global Options</TITLE>
+<META content=3Dtext/html;charset=3Dutf-8 http-equiv=3DContent-Type>
+<META content=3Dtext/css http-equiv=3DContent-Style-Type><LINK =
+rel=3DStyleSheet=20
+type=3Dtext/css=20
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/css/o=
+.gopts.css"=20
+media=3Dall><LINK rel=3DStyleSheet type=3Dtext/css=20
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/css/w=
+ebworks.css"=20
+media=3Dall>
+<META name=3DGENERATOR content=3D"MSHTML 8.00.7601.17622"></HEAD>
+<BODY>
+<TABLE summary=3D"" align=3Dright>
+  <TBODY>
+  <TR>
+    <TD class=3DWebWorks_Company_Logo_Top><A =
+href=3D"http://www.perforce.com/"=20
+      target=3D_blank><IMG border=3D0=20
+      =
+src=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/perfor=
+ce.gif"></A>=20
+    </TD></TR></TBODY></TABLE>
+<DIV style=3D"TEXT-ALIGN: left">
+<TABLE cellSpacing=3D0 summary=3D"">
+  <TBODY>
+  <TR>
+    <TD><A=20
+      =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/_othe=
+r.html"><IMG=20
+      border=3D0 alt=3DPrevious=20
+      =
+src=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/images=
+/prev.gif"></A>=20
+    </TD>
+    <TD><A=20
+      =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/index=
+.html"><IMG=20
+      border=3D0 alt=3D"Table of Contents"=20
+      =
+src=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/images=
+/toc.gif"></A>=20
+    </TD>
+    <TD><A=20
+      =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/_cmdr=
+efIX.html"><IMG=20
+      border=3D0 alt=3DIndex=20
+      =
+src=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/images=
+/index.gif"></A>=20
+    </TD>
+    <TD><A=20
+      =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/o.fsp=
+ecs.html"><IMG=20
+      border=3D0 alt=3DNext=20
+      =
+src=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/images=
+/next.gif"></A>=20
+    </TD></TR>
+  <TR>
+    <TD><!-- blank cell left --></TD>
+    <TD><!-- blank cell mid --></TD>
+    <TD><!-- blank cell right --></TD></TR></TBODY></TABLE><SPAN=20
+class=3DChapterNumber>Perforce 2010.2: Command Reference</SPAN> =
+</DIV><BR=20
+clear=3Dall><BR>
+<DIV style=3D"TEXT-ALIGN: left" class=3DWebWorks_Breadcrumbs></DIV>
+<HR align=3Dleft>
+
+<BLOCKQUOTE>
+  <DIV class=3DHeading1man><A name=3D1040647>Global Options</A></DIV>
+  <DIV class=3DHeading2><A name=3D1040648>Synopsis</A></DIV>
+  <DIV class=3DBody><A name=3D1040703>Global options for Perforce =
+commands; these=20
+  options can be supplied on the command </A>line before any Perforce=20
+  command.</DIV>
+  <DIV class=3DHeading2><A name=3D1045522>Syntax</A></DIV>
+  <DIV class=3DLiteral0><A name=3D1045523>p4 [-c</A><SPAN =
+class=3DVarLit>client</SPAN>=20
+  -d<SPAN class=3DVarLit>dir</SPAN> -H<SPAN class=3DVarLit>host</SPAN> =
+-p<SPAN=20
+  class=3DVarLit>port</SPAN> -P<SPAN class=3DVarLit>pass</SPAN> -u<SPAN=20
+  class=3DVarLit>user</SPAN> -x<SPAN class=3DVarLit>file</SPAN> -C<SPAN=20
+  class=3DVarLit>charset</SPAN> -Q<SPAN class=3DVarLit>charset</SPAN> =
+-L<SPAN=20
+  class=3DVarLit>language</SPAN>] [-G] [-s] [-z tag] cmd [args =
+...]<BR>p4 -V<BR>p4=20
+  -h</DIV>
+  <DIV class=3DHeading2><A name=3D1045577>Options</A></DIV>
+  <TABLE style=3D"TEXT-ALIGN: left" class=3DTable1 cellSpacing=3D0>
+    <CAPTION></CAPTION>
+    <TBODY>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1045526>-c </A><SPAN=20
+        class=3DVarLit>client</SPAN></DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1045530>Overrides any </A><SPAN=20
+        class=3DHyperLit><A=20
+        =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/env.P=
+4CLIENT.html#1040647">P4CLIENT</A></SPAN>=20
+        setting with the specified client name. </DIV></TD></TR>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1045532>-d </A><SPAN=20
+        class=3DVarLit>dir</SPAN></DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1045535>Overrides any </A><SPAN=20
+        class=3DHyperLit><A=20
+        =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/env.P=
+WD.html#1040647">PWD</A></SPAN>=20
+        setting (i.e. current working directory) and replaces it with =
+the=20
+        specified directory. </DIV></TD></TR>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1045537>-G</A></DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1045540>Causes all output (and =
+batch input=20
+        for form commands with </A><SPAN class=3DLiteral>-i</SPAN>) to =
+be=20
+        formatted as marshalled Python dictionary objects. This is most =
+often=20
+        used when scripting.</DIV></TD></TR>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1045542>-H </A><SPAN=20
+        class=3DVarLit>host</SPAN></DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1045545>Overrides any </A><SPAN=20
+        class=3DHyperLit><A=20
+        =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/env.P=
+4HOST.html#1040647">P4HOST</A></SPAN>=20
+        setting and replaces it with the specified hostname. =
+</DIV></TD></TR>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1045547>-p </A><SPAN=20
+        class=3DVarLit>port</SPAN></DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1045550>Overrides any </A><SPAN=20
+        class=3DHyperLit><A=20
+        =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/env.P=
+4PORT.html#1040647">P4PORT</A></SPAN>=20
+        setting with the specified port number. </DIV></TD></TR>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1045552>-P </A><SPAN=20
+        class=3DVarLit>pass</SPAN></DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1045555>Overrides any </A><SPAN=20
+        class=3DHyperLit><A=20
+        =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/env.P=
+4PASSWD.html#1040647">P4PASSWD</A></SPAN>=20
+        setting with the specified password. </DIV></TD></TR>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1045584>-s</A></DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1045587>Prepends a descriptive =
+field (for=20
+        example, </A><SPAN class=3DLiteral>text:</SPAN>, <SPAN=20
+        class=3DLiteral>info:</SPAN>, <SPAN =
+class=3DLiteral>error:</SPAN>, <SPAN=20
+        class=3DLiteral>exit:</SPAN>) to each line of output produced by =
+a=20
+        Perforce command. This is most often used when =
+scripting.</DIV></TD></TR>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1045557>-u </A><SPAN=20
+        class=3DVarLit>user</SPAN></DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1045560>Overrides any </A><SPAN=20
+        class=3DHyperLit><A=20
+        =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/env.P=
+4USER.html#1040647">P4USER</A></SPAN>,=20
+        <SPAN class=3DLiteral>USER</SPAN>, or <SPAN =
+class=3DLiteral>USERNAME</SPAN>=20
+        setting with the specified user name. </DIV></TD></TR>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1045567>-x </A><SPAN=20
+        class=3DVarLit>file</SPAN></DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1045569>Instructs Perforce to =
+read=20
+        arguments, one per line, from the </A>specified file. If file is =
+a=20
+        single hyphen (<SPAN class=3DLiteral>-</SPAN>), then standard =
+input is=20
+        read. </DIV></TD></TR>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1048258>-C </A><SPAN=20
+        class=3DVarLit>charset</SPAN></DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1048260>Overrides any </A><SPAN=20
+        class=3DHyperLit><A=20
+        =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/env.P=
+4CHARSET.html#1040647">P4CHARSET</A></SPAN>=20
+        setting with the specified character set.</DIV></TD></TR>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1048527>-Q </A><SPAN=20
+        class=3DVarLit>charset</SPAN></DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1048530>Overrides any </A><SPAN=20
+        class=3DHyperLit><A=20
+        =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/env.P=
+4COMMANDCHARSET.html#1040647">P4COMMANDCHARSET</A></SPAN>=20
+        setting with the specified character set.</DIV></TD></TR>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1048273>-L </A><SPAN=20
+        class=3DVarLit>language</SPAN></DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1048275>This feature is reserved =
+for system=20
+        integrators. </A></DIV></TD></TR>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1048678>-z tag</A></DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1048680>Causes output of many =
+reporting=20
+        commands to be in the same </A>tagged format as that generated =
+by <SPAN=20
+        class=3DHyperLit><A=20
+        =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/fstat=
+.html#1040665">p4=20
+        fstat</A></SPAN>.</DIV></TD></TR>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1045590>-V</A></DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1045592>Displays the version of =
+the=20
+        </A><SPAN class=3DLiteral>p4</SPAN> client program and exits. =
+</DIV></TD></TR>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1048266>-h</A></DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1048268>Displays basic usage =
+information and=20
+        exits.</A></DIV></TD></TR></TBODY></TABLE>
+  <DIV class=3DHeading2><A name=3D1040576>Usage Notes</A></DIV>
+  <DIV style=3D"MARGIN-LEFT: 18pt" class=3DBullet1_outer>
+  <TABLE border=3D0 cellSpacing=3D0 summary=3D"" cellPadding=3D0>
+    <TBODY>
+    <TR style=3D"VERTICAL-ALIGN: baseline">
+      <TD>
+        <DIV style=3D"WIDTH: 10.8pt; WHITE-SPACE: nowrap"=20
+        class=3DBullet1_inner><SPAN class=3DHyperBody>=E2=80=A2 =
+</SPAN></DIV></TD>
+      <TD width=3D"100%">
+        <DIV class=3DBullet1_inner><A name=3D1040577>Be aware that the =
+global=20
+        options must be specified on the command line before the =
+</A>Perforce=20
+        command. Options specified after the Perforce command will not =
+be=20
+        interpreted as global options, but as options for the command =
+being=20
+        invoked. It is therefore possible to have the same command line =
+option=20
+        appearing twice in the same command, being interpreted =
+differently each=20
+        time. </DIV></TD></TR></TBODY></TABLE></DIV>
+  <DIV class=3DBullet1Cont><A name=3D1040777>For example, the command =
+</A><SPAN=20
+  class=3DLiteral>p4 -c </SPAN><SPAN =
+class=3DVarLit>anotherclient</SPAN><SPAN=20
+  class=3DLiteral> edit -c 140 file.c</SPAN> will open file <SPAN=20
+  class=3DLiteral>file.c</SPAN> for edit in pending changelist 140 under =
+client=20
+  workspace <SPAN class=3DVarLit>anotherclient</SPAN>.</DIV>
+  <DIV style=3D"MARGIN-LEFT: 18pt" class=3DBullet1_outer>
+  <TABLE border=3D0 cellSpacing=3D0 summary=3D"" cellPadding=3D0>
+    <TBODY>
+    <TR style=3D"VERTICAL-ALIGN: baseline">
+      <TD>
+        <DIV style=3D"WIDTH: 10.8pt; WHITE-SPACE: nowrap"=20
+        class=3DBullet1_inner><SPAN class=3DHyperBody>=E2=80=A2 =
+</SPAN></DIV></TD>
+      <TD width=3D"100%">
+        <DIV class=3DBullet1_inner><A name=3D1040722>The </A><SPAN=20
+        class=3DLiteral>-x</SPAN> option is useful for automating =
+tedious tasks; a=20
+        user adding several files at once could create a text file with =
+the=20
+        names of these files and invoke <SPAN class=3DLiteral>p4 -x =
+</SPAN><SPAN=20
+        class=3DVarLit>textfile</SPAN><SPAN class=3DLiteral> add</SPAN> =
+to add them=20
+        all at once.</DIV></TD></TR></TBODY></TABLE></DIV>
+  <DIV class=3DBullet1Cont><A name=3D1040723>The </A><SPAN =
+class=3DLiteral>-x</SPAN>=20
+  option can be extremely powerful - as powerful as whatever generates =
+its=20
+  input. For example, a UNIX developer wishing to edit any file =
+referring to an=20
+  included <SPAN class=3DLiteral>file.h</SPAN> file, for instance, could =
+<SPAN=20
+  class=3DLiteral>grep -l file.h *.c | cut -f1 -d: | p4 -x - =
+edit</SPAN>. </DIV>
+  <DIV class=3DBullet1Cont><A name=3D1040778>In this example, the =
+</A><SPAN=20
+  class=3DLiteral>grep</SPAN> command lists occurrences of <SPAN=20
+  class=3DLiteral>file.h</SPAN> in the <SPAN class=3DLiteral>*.c</SPAN> =
+files, the=20
+  <SPAN class=3DLiteral>-l</SPAN> option tells <SPAN =
+class=3DLiteral>grep</SPAN> to=20
+  list each file only once, and the <SPAN class=3DLiteral>cut</SPAN> =
+command=20
+  splits off the filename from <SPAN class=3DLiteral>grep</SPAN>'s =
+output before=20
+  passing it to the <SPAN class=3DLiteral>p4 -x</SPAN> command.</DIV>
+  <DIV style=3D"MARGIN-LEFT: 18pt" class=3DBullet1_outer>
+  <TABLE border=3D0 cellSpacing=3D0 summary=3D"" cellPadding=3D0>
+    <TBODY>
+    <TR style=3D"VERTICAL-ALIGN: baseline">
+      <TD>
+        <DIV style=3D"WIDTH: 10.8pt; WHITE-SPACE: nowrap"=20
+        class=3DBullet1_inner><SPAN class=3DHyperBody>=E2=80=A2 =
+</SPAN></DIV></TD>
+      <TD width=3D"100%">
+        <DIV class=3DBullet1_inner><A name=3D1040724>The </A><SPAN=20
+        class=3DLiteral>-s</SPAN> option can be useful in automated =
+scripts.=20
+      </DIV></TD></TR></TBODY></TABLE></DIV>
+  <DIV class=3DBullet1Cont><A name=3D1040776>For example, a script could =
+be written=20
+  as part of an in-house build process which </A>executes <SPAN =
+class=3DLiteral>p4=20
+  -s</SPAN> commands, discards any output lines beginning with "<SPAN=20
+  class=3DLiteral>info:</SPAN>", and alerts the user if any output lines =
+begin=20
+  with "<SPAN class=3DLiteral>error:</SPAN>".</DIV>
+  <DIV style=3D"MARGIN-LEFT: 18pt" class=3DBullet1_outer>
+  <TABLE border=3D0 cellSpacing=3D0 summary=3D"" cellPadding=3D0>
+    <TBODY>
+    <TR style=3D"VERTICAL-ALIGN: baseline">
+      <TD>
+        <DIV style=3D"WIDTH: 10.8pt; WHITE-SPACE: nowrap"=20
+        class=3DBullet1_inner><SPAN class=3DHyperBody>=E2=80=A2 =
+</SPAN></DIV></TD>
+      <TD width=3D"100%">
+        <DIV class=3DBullet1_inner><A name=3D1045402>Python developers =
+will find the=20
+        </A><SPAN class=3DLiteral>-G</SPAN> option extremely useful for =
+scripting.=20
+        For instance, to get a dictionary of all fields of a job whose =
+ID is=20
+        known, use the following:</DIV></TD></TR></TBODY></TABLE></DIV>
+  <DIV class=3DLiteral2><A name=3D1045409>job_dict =3D =
+marshal.load(os.popen('p4 -G=20
+  job -o ' + job_id, 'rb'))</A></DIV>
+  <DIV class=3DBullet1Cont><A name=3D1048244>In some cases, it may not =
+be=20
+  intuitively obvious what keys are used by the client </A>program. If =
+you pipe=20
+  the output of any <SPAN class=3DLiteral>p4 -G</SPAN> invocation to the =
+following=20
+  script, you will see every record printed out in key/value pairs: =
+</DIV>
+  <DIV class=3DBullet1Cont><A name=3D1048689></A>&nbsp;</DIV>
+  <TABLE style=3D"TEXT-ALIGN: left" class=3DExampleBox cellSpacing=3D0>
+    <CAPTION></CAPTION>
+    <TBODY>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; PADDING-LEFT: 4pt; WIDTH: 374.4pt; =
+PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px solid; =
+BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A =
+name=3D1048247>#!/usr/local/bin/python</A></DIV>
+        <DIV class=3DCellLiteral><A name=3D1048248>import marshal, =
+sys</A></DIV>
+        <DIV class=3DCellLiteral><A=20
+        =
+name=3D1048249>try:</A><BR>&nbsp;&nbsp;&nbsp;&nbsp;num=3D0<BR>&nbsp;&nbsp=
+;&nbsp;&nbsp;while=20
+        =
+1:<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num=3Dnum+1<BR>&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print=20
+        '\n--%d--' % =
+num<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dict=20
+        =3D&nbsp;&nbsp;marshal.load(sys.stdin,=20
+        'rb')<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for key =
+in=20
+        dict.keys(): print "%s: %s" % (key,dict[key])</DIV>
+        <DIV class=3DCellLiteral><A name=3D1048250>except EOFError:=20
+    pass</A></DIV></TD></TR></TBODY></TABLE>
+  <DIV class=3DBullet1Cont><A name=3D1048251>Python developers on =
+Windows should be=20
+  aware of potential </A>CR/LF translation issues; in the example, it is =
+
+  necessary to call <SPAN class=3DLiteral>marshal.load()</SPAN> to read =
+the data=20
+  in binary ("<SPAN class=3DLiteral>rb</SPAN>") mode. </DIV>
+  <DIV style=3D"MARGIN-LEFT: 18pt" class=3DBullet1_outer>
+  <TABLE border=3D0 cellSpacing=3D0 summary=3D"" cellPadding=3D0>
+    <TBODY>
+    <TR style=3D"VERTICAL-ALIGN: baseline">
+      <TD>
+        <DIV style=3D"WIDTH: 10.8pt; WHITE-SPACE: nowrap"=20
+        class=3DBullet1_inner><SPAN class=3DHyperBody>=E2=80=A2 =
+</SPAN></DIV></TD>
+      <TD width=3D"100%">
+        <DIV class=3DBullet1_inner><A name=3D1048252>Some uses of the =
+global options=20
+        are absurd. </A></DIV></TD></TR></TBODY></TABLE></DIV>
+  <DIV class=3DBullet1Cont><A name=3D1048254>For example, </A><SPAN =
+class=3DLiteral>p4=20
+  -c </SPAN><SPAN class=3DVarLit>anotherclient</SPAN><SPAN =
+class=3DLiteral>=20
+  help</SPAN> provides exactly the same output as <SPAN =
+class=3DLiteral><A=20
+  =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/help.=
+html#1040665">p4=20
+  help</A></SPAN>.</DIV>
+  <DIV class=3DHeading2><A name=3D1040616>Examples</A></DIV>
+  <TABLE style=3D"TEXT-ALIGN: left" class=3DTable1 cellSpacing=3D0>
+    <CAPTION></CAPTION>
+    <TBODY>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1040622>p4 -p </A><SPAN=20
+        class=3DVarLit>new_server</SPAN>:1234 sync</DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1040624>Performs a sync using =
+server=20
+        </A><SPAN class=3DVarLit>new_server</SPAN> and port <SPAN=20
+        class=3DLiteral>1234</SPAN>, regardless of the settings of the =
+<SPAN=20
+        class=3DHyperLit>P4PORT</SPAN> environment variable or registry=20
+        setting.</DIV></TD></TR>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1040729>p4 -c </A><SPAN=20
+        class=3DVarLit>new_client</SPAN> submit -c 100</DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1040731>The first </A><SPAN=20
+        class=3DLiteral>-c</SPAN> is the global option to specify the =
+client name.=20
+        The second <SPAN class=3DLiteral>-c</SPAN> specifies a =
+changelist=20
+        number.</DIV></TD></TR>
+    <TR>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellLiteral><A name=3D1040733>p4 -s -x filelist.txt =
+
+        edit</A></DIV></TD>
+      <TD=20
+      style=3D"BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px =
+solid; PADDING-BOTTOM: 3pt; BACKGROUND-COLOR: #ececec; PADDING-LEFT: =
+4pt; PADDING-RIGHT: 4pt; VERTICAL-ALIGN: top; BORDER-TOP: black 1px =
+solid; BORDER-RIGHT: black 1px solid; PADDING-TOP: 3pt">
+        <DIV class=3DCellText><A name=3D1040735>If </A><SPAN=20
+        class=3DLiteral>filelist.txt</SPAN> contains a list of files, =
+this command=20
+        opens each file on the list for editing, and produces output =
+suitable=20
+        for parsing by scripts. </DIV>
+        <DIV class=3DCellText><A name=3D1045362>Any errors as a result =
+of the=20
+        automated </A><SPAN class=3DHyperLit>p4 edit</SPAN> commands =
+(for example,=20
+        a file in <SPAN class=3DLiteral>filelist.txt</SPAN> not being =
+found) can=20
+        then be easily detected by examining the command's output for =
+lines=20
+        beginning with "<SPAN=20
+  class=3DLiteral>error:</SPAN>"</DIV></TD></TR></TBODY></TABLE>
+  <DIV class=3DBody><A name=3D1040360></A>&nbsp;</DIV></BLOCKQUOTE>
+<HR align=3Dleft>
+
+<DIV style=3D"TEXT-ALIGN: left" class=3DWebWorks_Breadcrumbs></DIV><BR>
+<DIV style=3D"TEXT-ALIGN: left">
+<TABLE cellSpacing=3D0 summary=3D"">
+  <TBODY>
+  <TR>
+    <TD><A=20
+      =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/_othe=
+r.html"><IMG=20
+      border=3D0 alt=3DPrevious=20
+      =
+src=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/images=
+/prev.gif"></A>=20
+    </TD>
+    <TD><A=20
+      =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/index=
+.html"><IMG=20
+      border=3D0 alt=3D"Table of Contents"=20
+      =
+src=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/images=
+/toc.gif"></A>=20
+    </TD>
+    <TD><A=20
+      =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/_cmdr=
+efIX.html"><IMG=20
+      border=3D0 alt=3DIndex=20
+      =
+src=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/images=
+/index.gif"></A>=20
+    </TD>
+    <TD><A=20
+      =
+href=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/o.fsp=
+ecs.html"><IMG=20
+      border=3D0 alt=3DNext=20
+      =
+src=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/images=
+/next.gif"></A>=20
+    </TD></TR></TBODY></TABLE></DIV>
+<TABLE summary=3D"" align=3Dright>
+  <TBODY>
+  <TR>
+    <TD class=3DWebWorks_Company_Logo_Bottom><A =
+href=3D"http://www.perforce.com/"=20
+      target=3D_blank><IMG border=3D0=20
+      =
+src=3D"http://www.perforce.com/perforce/doc.current/manuals/cmdref/perfor=
+ce.gif"></A>=20
+    </TD></TR></TBODY></TABLE><BR><SPAN class=3DChapterNumber>Perforce =
+2010.2: Command=20
+Reference</SPAN>=20
+<DIV style=3D"TEXT-ALIGN: left; FONT-FAMILY: sans-serif; FONT-SIZE: =
+8pt">Copyright=20
+1999-2010 Perforce Software.</DIV><BR></BODY></HTML>
+
+------=_NextPart_000_0000_01CC4E28.24750950
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.perforce.com/perforce/doc.current/manuals/cmdref/perforce.gif
+
+R0lGODlhyAAuANUgAAAAAOysAH9/f7+/v0BAQP7679/f32BgYO2xEPXVfzAwMBAQEP313+/v75+f
+n4+PjyAgIPPLYPC8MPHBQHBwcK+vr8/Pz+62IPjgn/LGUPnlr/TQcPrqv1BQUPvvz/fbj////wAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAACAALAAAAADIAC4AAAb/QJBw
+SCwaj8ikcslsOp/QqHRKrVqv2Kx2y+16v+CweEwum89lzAWRKKDf8Li28LkE7gG2W87v+4sFCQh4
+hHkRDH+JimUeEYWPeBkci5SVWBgTkJp4Fxh7lqChRwyCm6Z4CBEeoqygGBmnsYUSnkgGAri5ugID
+Rre7wLsgv8G4FkcDxcpFFQIEzwQdvEfExb1MBg8H0AQHDwZEytYgDBuDsuiEqZNFAwDv8PHvEBVE
+7vL48RAg9/nw9EUE+PPXYYiABQMhOGg38N+DJAMINFRQD0TDfPU+ZDiXruOENgwvvjswpJ9IACRN
+NqQQ7iS8hw0UnCTQoKRLkkYOuFzoEl7N/yEaInDsqClDLWQ9WfLrCWChyoYPhQjsaSFmTwU2bxbR
+eRJCTaYEkGiARZQQrU9InjbspXYguLb+wIGY2hUEBXwQoCGUJ0AI3HzX5uZToBfeNaZ9k5AaGisV
+oiYqizyQl1IeZMtEJsfDSRdAWCUG5C1YmHkvvLfyAoPQDK/gMHwd5A6p0AGnxXiqpwRiDEkPlMhF
+7sJbsDTeZeNb9UmN9zkJV8NHKsh7qDJ3ZwBChMOzrSR1lt2afAPC8BgpciIW5FkAvoR9VnjL4TVH
+AiGe6yMy4WGtXiQ0bhD1/eOEd3OUQghIRYwViQbmwWdEau5BhJk9mHU2ny/ykHYEa+8UB/9dEaml
+F09UTBC4BQOOBJBBeUKA94gELHrYYREinqYSN9wc896MREiHXGcL4AiNXyYaUR1/RPhnmAPqDRgP
+YUJqiEQgF0TAoBEcXDmEi4VMoCWF5w3xHADE/fUhkWEK0YFygokkBIcA/NTgOwMgaZA8DVz3xEmJ
+IaEGIRdssEoSGPCmIjtzYkcEk5vJOJBqETK6XXwXUcrjEQ1AWOSNbTrYBJ9IcJCJJrRgKQEkEyCa
+Fl+5jPkOaiJByiouEskj13X+WKpoEppu1io+vVi4p0h9DoGiLL4VsAEkF6gqoUtK3SgkATqiCaql
+QU775oTU9HqSa3o6qd+0UoKg7ASG9rb/gR2PJPCEmZNae+mzInEnLL2v4gtAnS4p8FO4n/4HBQMa
+JDCqRyyiqMqqFy1QbIQM19uSfKDJU9ERknYI7zv+CuHjmUsUKYUG68ri7pYJmPUBWo4+eYADcsq7
+qxIbv0PivUkEOFIStXLc8kA4KblzwCBXwcAHpzI7qBAaMCbejjPre5yn/JgGAFaWXmiEdu9UCyY8
+LNlpgc5kDpEfPF7zKrAW5bB7RwafFEAWIRuwLPPU80Y8r6s64myLaLkNYDUAsIIMJ2kZk1kuCLQF
+JrIWQQVwshAeuH2HBEsbya2+F4UVoUpK+Y0E1xzjQsHZYMusmtAA3If6PAfQutc+QjC1/68WGDxS
+N82b6y2S572TTVynnjFhVb8/2akmnkIYMPhAidmeGxGiZpAABpkbkSIqX/qO9++OGnFdPaIjcfxF
+HateROIkju3SV0xNL8Syj0zwQeYFHHx59t4zUfM7wEvTaxpVviQcZCAOC0nRQGA1rAkhT89jzmHi
+ZwQGJG0TgWJAAS54ObvZQhjYEAcwFlKNYg3hAcJIRi4Wt4QKUABHFLhYknYhmyE4AIREaIALceSN
+GooQGDUEQaHSwZgIeLAVSPRDAbZXlgBEIIlQXAQDLiCBCVixLE+MohZDwQAOfGAD+itEFrdIRlZw
+IAEclMARy8hGKSJNjW2MoxznSMc62hLxjnjMox73yMc++vGPgCxjEAAAOw==
+
+------=_NextPart_000_0000_01CC4E28.24750950
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.perforce.com/perforce/doc.current/manuals/cmdref/images/prev.gif
+
+R0lGODlhNAAYAOYAAAAAAP////39/fz8/Pv7+/r6+vj4+Pf39/b29vT09PPz8/Hx8fDw8O/v7+3t
+7ezs7Ovr6+np6ejo6Ofn5+bm5uXl5d/f397e3t3d3dzc3Nvb29ra2tnZ2djY2NfX19bW1tXV1dTU
+1NPT09HR0dDQ0M/Pz87Ozs3NzczMzMvLy8rKysjIyMfHx8bGxsXFxcTExL+/v729vbu7u7m5ubi4
+uLe3t7a2trS0tLOzs7GxsbCwsK+vr66urqurq6ioqKampqWlpaOjo6KioqGhoaCgoJmZmZiYmJeX
+l46OjoyMjISEhICAgHh4eHd3d3Z2dnV1dWFhYWBgYFVVVUpKSv///wAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5
+BAEAAFQALAAAAAA0ABgAAAf/gFRUIjaFhoeIiYqLjDUeglRCPjCUlZaXmJmamzFAO1QqPBWjpKWm
+p6ipqqRAHj8oFLGys7S1tre4sjA2QiQTv8DBwsPExcbALzpCIxLNzs/Q0dLT1M4uyiMR2tvc3d7f
+4OHbLcoiEOfo6err6ClLROzx6yzKIQ/3+Pn6+w89T1NTbPAbuG+FMhAOEipcyJDhkChTogxpSLFi
+QoNCPjTYyLGjx40ckgB0QuOjyZMdVSjzwKCly5cwGQQBeKRCzJs4Y6oU0mGBz59Agy6YOcUIBaFI
+kwpNoYyDgqdQo0p9mgEJwCYypmrdGhWFsg0JwoodS5ZsESlToAApy7Zt2BPKjDQgmEu3rt27CHIw
+ARgDr9+7JpRlOEC4sOHDiAuHUPIjsWPEJZRhMEC5suXLmDNr3lw5spALBUKLHk26tOnTqEWPUGaB
+gOvXsGPLnk279uvVQDAM2M27t+/fwIML523iBosZApIrX868ufPn0JX36EAlCA4T2LNr3869u/fv
+JnrogDSCkfnz6A9RpxIIADs=
+
+------=_NextPart_000_0000_01CC4E28.24750950
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.perforce.com/perforce/doc.current/manuals/cmdref/images/toc.gif
+
+R0lGODlhNAAYAOYAAAAAAP////39/fz8/Pv7+/r6+vPz8/Hx8fDw8Onp6ejo6Ofn5+bm5uXl5c7O
+zr+/v7a2tkpKSvj4+Pf39/b29vT09O/v7+3t7ezs7Ovr6+Tk5OHh4eDg4N/f397e3t3d3dzc3Nvb
+29ra2tnZ2djY2NfX19bW1tXV1dTU1NPT09HR0dDQ0M/Pz83NzczMzMvLy8rKysjIyMfHx8bGxsXF
+xcTExMLCwsHBwb29vbu7u7m5ubi4uLe3t7S0tLOzs7KysrGxsbCwsK+vr66urq2traysrKurq6io
+qKenp6ampqWlpaSkpKOjo6KioqGhoaCgoJubm5mZmZeXl5aWlo+Pj42NjYuLi4qKioODg4KCgoGB
+gXh4eHd3d3Z2dnV1dW1tbWxsbGtra2pqamFhYWBgYF9fX1ZWVlVVVf///wAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5
+BAEAAGgALAAAAAA0ABgAAAf/gGhoKRCFhoeIiYqLjDwlgmhNRw+UlZaXmJmamzhKQmgwQw2jpKWm
+p6ipqqRKJUkuDLGys7S1tre4sg8QTSsLv8DBwsPExcbANUFNKgrNzs/Q0dLT1M40yioJ2tvc3d7f
+4OHbM8opGefoGSYR7O3sJudGYuxlT+kZL17tVxz3/jLKUGAYSLAgBi9eDD6JMGXgQisEXUTwsgHD
+DTJkKhosGEPZiQsgQ4q8gFBkiQhORBaJYAMkGS8ibaAcObJjExMWcurcaaFLl51SImjgeUaLBQcR
+dvCUQoQnTxjKSiCYSrUqAp9Vu4SxikALGQRMIojgSrYq1CYkDqhdy/YAFy5s+snAbVslwoGwbfPq
+faFshIG/gAMbeBuYCxjBBrKMMbAkAgjEkAO7UCaiguXLmCu8xRwlQoLMZ7BUyBEhR+YIUTJnbqEs
+BIXXsGNT2LIldocISWIDiRDj9ZnasHfjkC3bgTIQE5IrXz6BNvMkEaAkh05FOY4IWzJM+GHmC/Pv
+LJR9kEC+vHkJtM9L+PGF3Rgk52G0ZwdFvfrwTTwU2M+/v///AAYoIH8qKNMBAQgmqOCCDDbo4IMJ
+FqjEBwNUaOGFGGao4YYcWuhADzLoIMCIJJZo4okopqgiiUaQgAYTPjgg44w01mjjjTjm6IARQUCi
+AiNABinkIS6iEQgAOw==
+
+------=_NextPart_000_0000_01CC4E28.24750950
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.perforce.com/perforce/doc.current/manuals/cmdref/images/index.gif
+
+R0lGODlhNAAYAOYAAAAAAP////39/fz8/Pv7+/r6+vj4+Pf39/b29vT09PPz8/Hx8fDw8O/v7+3t
+7ezs7Ovr6+np6ejo6Ofn5+bm5uXl5eTk5ODg4N/f397e3t3d3dzc3Nvb29ra2tnZ2djY2NfX19bW
+1tXV1dTU1NPT09HR0dDQ0M/Pz87Ozs3NzczMzMvLy8rKysnJycjIyMfHx8bGxsXFxcTExMPDw8LC
+wsHBwcDAwL+/v729vbu7u7m5ube3t7a2trS0tLOzs7KysrCwsK+vr66urq2traysrKurq6ioqKam
+pqWlpaSkpKOjo6KioqGhoZubm5mZmZeXl5aWlo+Pj46Ojo2NjYyMjIuLi4qKioSEhIODg4GBgXh4
+eHd3d3V1dW1tbWxsbGtra2FhYWBgYFZWVlVVVUpKSv///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5
+BAEAAGUALAAAAAA0ABgAAAf/gGVlJDyFhoeIiYqLjDsggmVLRjeUlZaXmJmamzhIQWUsQhWjpKWm
+p6ipqqRIIEcqFLGys7S1tre4sjc8SyYTv8DBwsPExcbAMkBLJRLNzs/Q0dLT1M4xyiUR2ttkVtvf
+4Ns3ZDfh5ucRMMokEO3u3e7x8u42ZDbz+PkQL8ojD/8AyVQBSLAgwBpkahhcyPCBC2UiHEicKFAi
+GShhyJBhMpHIGDJjqpChIZFGxosSmYx0AGIMl4kTHy4J0aCmTTJUamqc0eAJGQsNZpBZ0gBFRp4o
+yAwJOrTmlzANsoQBarMmC2UgGGjdilMrmSdaT5CRwUDqViFjy2bZ+uSL1g5k/76k3br16pIPC/Lq
+JTMlLxkleTmMXRCmb14Tg09q1KhXCV+9kBesUOZBgeXLZKRYJpPE8gYyMBSA0Wy5BGgFXkhfvrwF
+pITVl1Uo65Cgtu3Mtckgqa2BzIsEWMDYBuIbuPDaTo4TzzFGiu3nKZRxQEC9Opko1MkcoY6BjAsE
+Lq4jGAHGO3jxI8ZsxzAG+xEyOKpXR6Fsw4H7+K/f137/ApkW9/0ghkZX/BdgeWQ0cZ8WYkBwXxdg
+XIDffScoo4EBGGao4YYcdujhhxlWuEQGBZRo4okopqjiiiyaWIIyGBAg44w01mjjjTjmOOOLSGgw
+wI9ABinkkEQWaSSQKPTwgjAOAjTp5JNQRinllFQ6WcQHZSjhAwpcdunll2CGKeaYKBQBBCQlMKLm
+mmwegmUZgQAAOw==
+
+------=_NextPart_000_0000_01CC4E28.24750950
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.perforce.com/perforce/doc.current/manuals/cmdref/images/next.gif
+
+R0lGODlhNAAYAOYAAAAAAP////39/fz8/Pv7+/r6+vj4+Pf39/b29vT09PPz8/Hx8fDw8O/v7+3t
+7ezs7Ovr6+np6ejo6Ofn5+bm5uXl5eTk5OHh4d/f397e3t3d3dzc3Nvb29ra2tnZ2djY2NfX19bW
+1tXV1dTU1NPT09LS0tHR0dDQ0M/Pz87Ozs3NzczMzMvLy8rKysjIyMfHx8bGxsXFxcTExL+/v729
+vbu7u7m5ube3t7a2trS0tLOzs7CwsK+vr66urq2traurq6ioqKampqWlpaSkpKOjo6KioqCgoJqa
+mpmZmZeXl5aWloODg4CAgHh4eHd3d3Z2dnV1dWxsbGpqalVVVUpKSv///wAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5
+BAEAAFUALAAAAAA0ABgAAAf/gFVVJDiFhoeIiYqLjDcgglVFQDOUlZaXmJmamzRCPFUtPRWjpKWm
+p6ipqqRCIEErFLGys7S1tre4sjM4RScTv8DBwsPExcbAMjtFJhLNzs/Q0dLT1M4xyiYR2tvc3d7f
+4OHbMMokEOfo6eroUEbr7/DvL8ojD/b3+Pn3UlRUShf6AgrE50KZCAcIEypcqPAGk35MVjCcSBFh
+wSIhGmjcyLGjRwtJplB54sOjyZMtlIFgwLKly5cwWxJ5QmVKzJsvUxb5sKCnz59Ag/ok4qSm0KNA
+WSjzoKCp06dQo0pAIjLKkKhYs65Q1iGB169gw4KtsaTfkhJi06r1qkIZBwRwiOPKnRs3Sr8jEOjq
+3Ss3hbINBwILHkxYcJMghRMrToxCmQYDkCNLnky5suXLkRsXyVCgs+fPoEOLHk3aswllGAioXs26
+tevXsGOvPi1Ew4DbuHPr3s27t2/cKXK8sCGguPHjyJMrX87c+I8PVYjoSEG9uvXr2LNr357ixw5I
+JhiJH0/+EPQqgQAAOw==
+
+------=_NextPart_000_0000_01CC4E28.24750950
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.perforce.com/perforce/doc.current/manuals/cmdref/css/o.gopts.css
+
+DIV.Body {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 6pt 0pt 2pt 18pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.Body_outer {
+	MARGIN-TOP: 6pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.Body_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.Bullet1 {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: -10.8pt; MARGIN: 6pt 0pt 3pt 28.8pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.Bullet1_outer {
+	MARGIN-TOP: 6pt; MARGIN-BOTTOM: 3pt; MARGIN-RIGHT: 0pt
+}
+.Bullet1_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.Bullet1Cont {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 6pt 0pt 2pt 28.8pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.Bullet1Cont_outer {
+	MARGIN-TOP: 6pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.Bullet1Cont_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.Bullet2 {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: -10.8pt; MARGIN: 6pt 0pt 2pt 39.6pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.Bullet2_outer {
+	MARGIN-TOP: 6pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.Bullet2_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.Bullet2Cont {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 6pt 0pt 2pt 39.6pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.Bullet2Cont_outer {
+	MARGIN-TOP: 6pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.Bullet2Cont_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.Bullet3 {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: -10.799pt; MARGIN: 6pt 0pt 2pt 50.4pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.Bullet3_outer {
+	MARGIN-TOP: 6pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.Bullet3_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.Bullet3Cont {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 6pt 0pt 2pt 50.4pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.Bullet3Cont_outer {
+	MARGIN-TOP: 6pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.Bullet3Cont_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.CellBullet1 {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: -10.8pt; MARGIN: 2pt 0pt 2pt 10.8pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.CellBullet1_outer {
+	MARGIN-TOP: 2pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.CellBullet1_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.CellBullet1Cont {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 2pt 0pt 2pt 10.8pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.CellBullet1Cont_outer {
+	MARGIN-TOP: 2pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.CellBullet1Cont_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.CellBullet2 {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: -10.8pt; MARGIN: 2pt 0pt 2pt 21.6pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.CellBullet2_outer {
+	MARGIN-TOP: 2pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.CellBullet2_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.CellBullet2Cont {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 2pt 0pt 2pt 21.6pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.CellBullet2Cont_outer {
+	MARGIN-TOP: 2pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.CellBullet2Cont_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.CellBullet3 {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: -10.799pt; MARGIN: 2pt 0pt 2pt 32.4pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.CellBullet3_outer {
+	MARGIN-TOP: 2pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.CellBullet3_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.CellBullet3Cont {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 2pt 0pt 2pt 32.4pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.CellBullet3Cont_outer {
+	MARGIN-TOP: 2pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.CellBullet3Cont_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.CellHeading {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 0pt; FONT-FAMILY: Arial; =
+COLOR: #000000; FONT-SIZE: 9pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: =
+bold
+}
+.CellHeading_outer {
+	MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt; MARGIN-RIGHT: 0pt
+}
+.CellHeading_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: Arial; COLOR: #000000; FONT-SIZE: =
+9pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: bold; PADDING-TOP: 0pt
+}
+DIV.CellLiteral {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 4pt 0pt; FONT-FAMILY: =
+"Lucida Console", Monaco, "Bitstream Vera Sans Mono", Monospace; COLOR: =
+#000000; FONT-SIZE: 9pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.CellLiteral_outer {
+	MARGIN-TOP: 4pt; MARGIN-BOTTOM: 4pt; MARGIN-RIGHT: 0pt
+}
+.CellLiteral_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Lucida Console", Monaco, =
+"Bitstream Vera Sans Mono", Monospace; COLOR: #000000; FONT-SIZE: 9pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; PADDING-TOP: 0pt
+}
+DIV.CellNoteHead {
+	TEXT-ALIGN: right; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 4pt 0pt 3pt; FONT-FAMILY: =
+Arial; COLOR: #000000; FONT-SIZE: 9pt; VERTICAL-ALIGN: baseline; =
+FONT-WEIGHT: bold
+}
+.CellNoteHead_outer {
+	MARGIN-TOP: 4pt; MARGIN-BOTTOM: 3pt; MARGIN-RIGHT: 0pt
+}
+.CellNoteHead_inner {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: Arial; COLOR: #000000; FONT-SIZE: =
+9pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: bold; PADDING-TOP: 0pt
+}
+DIV.CellNoteText {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 4pt 0pt; FONT-FAMILY: =
+"Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: =
+baseline; FONT-WEIGHT: normal
+}
+.CellNoteText_outer {
+	MARGIN-TOP: 4pt; MARGIN-BOTTOM: 4pt; MARGIN-RIGHT: 0pt
+}
+.CellNoteText_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.CellNum1st {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: -18pt; MARGIN: 6pt 0pt 2pt 18pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.CellNum1st_outer {
+	MARGIN-TOP: 6pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.CellNum1st_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.CellNum2nd_002b {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: -18pt; MARGIN: 6pt 0pt 2pt 18pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.CellNum2nd_002b_outer {
+	MARGIN-TOP: 6pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.CellNum2nd_002b_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.CellText {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 4pt 0pt; FONT-FAMILY: =
+"Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: =
+baseline; FONT-WEIGHT: normal
+}
+.CellText_outer {
+	MARGIN-TOP: 4pt; MARGIN-BOTTOM: 4pt; MARGIN-RIGHT: 0pt
+}
+.CellText_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.ChapterTitle {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: -72pt; MARGIN: 0pt 0pt 24pt 72pt; =
+FONT-FAMILY: Arial; COLOR: #326ea1; FONT-SIZE: 24pt; VERTICAL-ALIGN: =
+baseline; FONT-WEIGHT: bold
+}
+.ChapterTitle_outer {
+	MARGIN-TOP: 0pt; MARGIN-BOTTOM: 24pt; MARGIN-RIGHT: 0pt
+}
+.ChapterTitle_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: Arial; COLOR: #326ea1; FONT-SIZE: =
+24pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: bold; PADDING-TOP: 0pt
+}
+DIV.Example1st {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: italic; TEXT-INDENT: 0cm; MARGIN: 12pt 0pt 2pt 39.6pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.Example1st_outer {
+	MARGIN-TOP: 12pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.Example1st_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: italic; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.ExampleCont {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: italic; TEXT-INDENT: 0pt; MARGIN: 6pt 0pt 2pt 39.6pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.ExampleCont_outer {
+	MARGIN-TOP: 6pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.ExampleCont_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: italic; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.ExampleEnd {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: italic; TEXT-INDENT: 0pt; MARGIN: 6pt 0pt 12pt 39.6pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.ExampleEnd_outer {
+	MARGIN-TOP: 6pt; MARGIN-BOTTOM: 12pt; MARGIN-RIGHT: 0pt
+}
+.ExampleEnd_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: italic; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.Footer {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: italic; TEXT-INDENT: 0pt; MARGIN: 0pt; FONT-FAMILY: =
+"Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: =
+baseline; FONT-WEIGHT: normal
+}
+.Footer_outer {
+	MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt; MARGIN-RIGHT: 0pt
+}
+.Footer_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: italic; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.Footnote {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: -21.6pt; MARGIN: 0pt 21.6pt 0pt 39.6pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 9pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.Footnote_outer {
+	MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt; MARGIN-RIGHT: 21.6pt
+}
+.Footnote_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 9pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.Header {
+	TEXT-ALIGN: right; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 0pt; FONT-FAMILY: =
+"Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 9pt; VERTICAL-ALIGN: =
+baseline; FONT-WEIGHT: normal
+}
+.Header_outer {
+	MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt; MARGIN-RIGHT: 0pt
+}
+.Header_inner {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 9pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.Heading1 {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 12pt 21.6pt 4pt 0pt; =
+FONT-FAMILY: Arial; COLOR: #326ea1; FONT-SIZE: 14pt; VERTICAL-ALIGN: =
+baseline; FONT-WEIGHT: bold
+}
+.Heading1_outer {
+	MARGIN-TOP: 12pt; MARGIN-BOTTOM: 4pt; MARGIN-RIGHT: 21.6pt
+}
+.Heading1_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: Arial; COLOR: #326ea1; FONT-SIZE: =
+14pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: bold; PADDING-TOP: 0pt
+}
+DIV.Heading1man {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 14pt 18pt 4pt 0pt; =
+FONT-FAMILY: Arial; COLOR: #326ea1; FONT-SIZE: 14pt; VERTICAL-ALIGN: =
+baseline; FONT-WEIGHT: bold
+}
+.Heading1man_outer {
+	MARGIN-TOP: 14pt; MARGIN-BOTTOM: 4pt; MARGIN-RIGHT: 18pt
+}
+.Heading1man_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: Arial; COLOR: #326ea1; FONT-SIZE: =
+14pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: bold; PADDING-TOP: 0pt
+}
+DIV.Heading2 {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 10pt 21.6pt 4pt 0pt; =
+FONT-FAMILY: Arial; COLOR: #326ea1; FONT-SIZE: 12pt; VERTICAL-ALIGN: =
+baseline; FONT-WEIGHT: bold
+}
+.Heading2_outer {
+	MARGIN-TOP: 10pt; MARGIN-BOTTOM: 4pt; MARGIN-RIGHT: 21.6pt
+}
+.Heading2_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: Arial; COLOR: #326ea1; FONT-SIZE: =
+12pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: bold; PADDING-TOP: 0pt
+}
+DIV.Heading2man {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 10pt 21.6pt 4pt 0pt; =
+FONT-FAMILY: Arial; COLOR: #326ea1; FONT-SIZE: 12pt; VERTICAL-ALIGN: =
+baseline; FONT-WEIGHT: bold
+}
+.Heading2man_outer {
+	MARGIN-TOP: 10pt; MARGIN-BOTTOM: 4pt; MARGIN-RIGHT: 21.6pt
+}
+.Heading2man_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: Arial; COLOR: #326ea1; FONT-SIZE: =
+12pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: bold; PADDING-TOP: 0pt
+}
+DIV.Heading3 {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 4pt 21.6pt 4pt 18pt; =
+FONT-FAMILY: Arial; COLOR: #326ea1; FONT-SIZE: 10pt; VERTICAL-ALIGN: =
+baseline; FONT-WEIGHT: bold
+}
+.Heading3_outer {
+	MARGIN-TOP: 4pt; MARGIN-BOTTOM: 4pt; MARGIN-RIGHT: 21.6pt
+}
+.Heading3_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: Arial; COLOR: #326ea1; FONT-SIZE: =
+10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: bold; PADDING-TOP: 0pt
+}
+DIV.Literal0 {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 0pt 0pt 4pt 18pt; =
+FONT-FAMILY: "Lucida Console", Monaco, "Bitstream Vera Sans Mono", =
+Monospace; COLOR: #000000; FONT-SIZE: 9pt; VERTICAL-ALIGN: baseline; =
+FONT-WEIGHT: normal
+}
+.Literal0_outer {
+	MARGIN-TOP: 0pt; MARGIN-BOTTOM: 4pt; MARGIN-RIGHT: 0pt
+}
+.Literal0_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Lucida Console", Monaco, =
+"Bitstream Vera Sans Mono", Monospace; COLOR: #000000; FONT-SIZE: 9pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; PADDING-TOP: 0pt
+}
+DIV.Literal1 {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 2pt 0pt 4pt 39.6pt; =
+FONT-FAMILY: "Lucida Console", Monaco, "Bitstream Vera Sans Mono", =
+Monospace; COLOR: #000000; FONT-SIZE: 9pt; VERTICAL-ALIGN: baseline; =
+FONT-WEIGHT: normal
+}
+.Literal1_outer {
+	MARGIN-TOP: 2pt; MARGIN-BOTTOM: 4pt; MARGIN-RIGHT: 0pt
+}
+.Literal1_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Lucida Console", Monaco, =
+"Bitstream Vera Sans Mono", Monospace; COLOR: #000000; FONT-SIZE: 9pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; PADDING-TOP: 0pt
+}
+DIV.Literal2 {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 0pt 0pt 6pt 57.6pt; =
+FONT-FAMILY: "Lucida Console", Monaco, "Bitstream Vera Sans Mono", =
+Monospace; COLOR: #000000; FONT-SIZE: 9pt; VERTICAL-ALIGN: baseline; =
+FONT-WEIGHT: normal
+}
+.Literal2_outer {
+	MARGIN-TOP: 0pt; MARGIN-BOTTOM: 6pt; MARGIN-RIGHT: 0pt
+}
+.Literal2_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Lucida Console", Monaco, =
+"Bitstream Vera Sans Mono", Monospace; COLOR: #000000; FONT-SIZE: 9pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; PADDING-TOP: 0pt
+}
+DIV.Num1st {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: -21.6pt; MARGIN: 6pt 0pt 2pt 39.6pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.Num1st_outer {
+	MARGIN-TOP: 6pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.Num1st_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.Num2nd_002b {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: -21.6pt; MARGIN: 6pt 0pt 2pt 39.6pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.Num2nd_002b_outer {
+	MARGIN-TOP: 6pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.Num2nd_002b_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.NumCont {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: 0pt; MARGIN: 6pt 0pt 2pt 39.6pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.NumCont_outer {
+	MARGIN-TOP: 6pt; MARGIN-BOTTOM: 2pt; MARGIN-RIGHT: 0pt
+}
+.NumCont_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 10pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+DIV.TableFootnote {
+	TEXT-ALIGN: left; TEXT-TRANSFORM: none; FONT-VARIANT: normal; =
+FONT-STYLE: normal; TEXT-INDENT: -21.6pt; MARGIN: 0pt 21.6pt 0pt 39.6pt; =
+FONT-FAMILY: "Microsoft Sans Serif"; COLOR: #000000; FONT-SIZE: 9pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+.TableFootnote_outer {
+	MARGIN-TOP: 0pt; MARGIN-BOTTOM: 0pt; MARGIN-RIGHT: 21.6pt
+}
+.TableFootnote_inner {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0pt; TEXT-TRANSFORM: none; =
+FONT-VARIANT: normal; FONT-STYLE: normal; MARGIN: 0pt; PADDING-LEFT: =
+0pt; PADDING-RIGHT: 0pt; FONT-FAMILY: "Microsoft Sans Serif"; COLOR: =
+#000000; FONT-SIZE: 9pt; VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal; =
+PADDING-TOP: 0pt
+}
+SPAN.Acronym {
+	FONT-STYLE: normal; FONT-FAMILY: Sans-Serif; COLOR: #000000; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+SPAN.BookName {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; FONT-STYLE: italic; =
+FONT-FAMILY: Sans-Serif; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+SPAN.ChapterNumber {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; FONT-STYLE: normal; =
+FONT-FAMILY: Sans-Serif; COLOR: #326ea1; FONT-SIZE: 11pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: bold
+}
+SPAN.Emphasis {
+	FONT-STYLE: italic; FONT-FAMILY: Sans-Serif; COLOR: #000000
+}
+SPAN.ExampleFont {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; FONT-STYLE: normal; =
+FONT-FAMILY: Sans-Serif; COLOR: #000000; FONT-SIZE: 9pt; VERTICAL-ALIGN: =
+baseline; FONT-WEIGHT: bold
+}
+SPAN.GUIFieldName {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; FONT-STYLE: normal; =
+FONT-FAMILY: Sans-Serif; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: bold
+}
+SPAN.GUIFieldValue {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; FONT-STYLE: normal; =
+FONT-FAMILY: "Lucida Console", Monaco, "Bitstream Vera Sans Mono", =
+Monospace; COLOR: #000000; FONT-SIZE: 12px; VERTICAL-ALIGN: baseline; =
+FONT-WEIGHT: normal
+}
+SPAN.GUIMenuOpt {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; FONT-STYLE: normal; =
+FONT-FAMILY: Sans-Serif; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: bold
+}
+SPAN.GUIMenuOptVar {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; FONT-STYLE: italic; =
+FONT-FAMILY: Sans-Serif; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: bold
+}
+SPAN.HyperBody {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; FONT-STYLE: italic; =
+FONT-FAMILY: Sans-Serif; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+SPAN.HyperLit {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; FONT-STYLE: normal; =
+FONT-FAMILY: "Lucida Console", Monaco, "Bitstream Vera Sans Mono", =
+Monospace; COLOR: #000000; FONT-SIZE: 12px; VERTICAL-ALIGN: baseline; =
+FONT-WEIGHT: normal
+}
+SPAN.Lead-in {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; FONT-FAMILY: Sans-Serif; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: bold
+}
+SPAN.Literal {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; FONT-STYLE: normal; =
+FONT-FAMILY: "Lucida Console", Monaco, "Bitstream Vera Sans Mono", =
+Monospace; COLOR: #000000; FONT-SIZE: 12px; VERTICAL-ALIGN: baseline; =
+FONT-WEIGHT: normal
+}
+SPAN.ProductName {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline
+}
+SPAN.Strong {
+	FONT-STYLE: italic; COLOR: #000000; FONT-WEIGHT: bold
+}
+SPAN.Super {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; COLOR: #000000; =
+VERTICAL-ALIGN: super
+}
+SPAN.Term {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; FONT-STYLE: italic; =
+FONT-FAMILY: Sans-Serif; COLOR: #000000; VERTICAL-ALIGN: baseline
+}
+SPAN.URL {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; FONT-STYLE: normal; =
+FONT-FAMILY: "Lucida Console", Monaco, "Bitstream Vera Sans Mono", =
+Monospace; COLOR: #000000; FONT-SIZE: 12px; VERTICAL-ALIGN: baseline; =
+FONT-WEIGHT: normal
+}
+SPAN.VarBody {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; FONT-STYLE: italic; =
+FONT-FAMILY: Sans-Serif; COLOR: #000000; FONT-SIZE: 10pt; =
+VERTICAL-ALIGN: baseline; FONT-WEIGHT: normal
+}
+SPAN.VarLit {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; FONT-STYLE: italic; =
+FONT-FAMILY: "Lucida Console", Monaco, "Bitstream Vera Sans Mono", =
+Monospace; COLOR: #000000; FONT-SIZE: 12px; VERTICAL-ALIGN: baseline; =
+FONT-WEIGHT: normal
+}
+SPAN.z_anchor {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; FONT-STYLE: normal; =
+FONT-FAMILY: Palatino; COLOR: magenta; FONT-SIZE: 36pt; VERTICAL-ALIGN: =
+baseline; FONT-WEIGHT: normal
+}
+SPAN.z_editme {
+	TEXT-TRANSFORM: none; FONT-VARIANT: normal; FONT-STYLE: normal; =
+FONT-FAMILY: Helvetica; COLOR: magenta; FONT-SIZE: 36pt; VERTICAL-ALIGN: =
+baseline; FONT-WEIGHT: bold
+}
+TABLE.ExampleBox {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 3pt; MARGIN: 4pt 0pt 4pt 39.6pt; =
+PADDING-LEFT: 4pt; PADDING-RIGHT: 4pt; BORDER-COLLAPSE: collapse; =
+PADDING-TOP: 3pt
+}
+TABLE.BodyBox {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 3pt; MARGIN: 4pt 0pt 12pt 18pt; =
+PADDING-LEFT: 4pt; PADDING-RIGHT: 4pt; BORDER-COLLAPSE: collapse; =
+PADDING-TOP: 3pt
+}
+TABLE.Table1 {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 3pt; MARGIN: 4pt 0pt 12pt 18pt; =
+PADDING-LEFT: 4pt; PADDING-RIGHT: 4pt; BORDER-COLLAPSE: collapse; =
+PADDING-TOP: 3pt
+}
+TABLE.NoteTable {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 3pt; MARGIN: 11pt 0pt 11pt 18pt; =
+PADDING-LEFT: 4pt; PADDING-RIGHT: 4pt; BORDER-COLLAPSE: collapse; =
+PADDING-TOP: 3pt
+}
+TABLE.WarnTable {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 3pt; MARGIN: 11pt 0pt 11pt 18pt; =
+PADDING-LEFT: 4pt; PADDING-RIGHT: 4pt; BORDER-COLLAPSE: collapse; =
+PADDING-TOP: 3pt
+}
+IMG.Default {
+	MARGIN-RIGHT: 12in
+}
+
+------=_NextPart_000_0000_01CC4E28.24750950
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.perforce.com/perforce/doc.current/manuals/cmdref/css/webworks.css
+
+A:active:link {
+	COLOR: #ff0000
+}
+A:hover:link {
+	COLOR: #0000ff
+}
+A:link {
+	COLOR: #0000ff
+}
+A:visited {
+	COLOR: #800080
+}
+H2.WebWorks_TOC_Title {
+=09
+}
+A.WebWorks_TOC_Link {
+=09
+}
+DIV.WebWorks_TOC_Level1 {
+	MARGIN-LEFT: 12pt
+}
+DIV.WebWorks_TOC_Level2 {
+	MARGIN-LEFT: 24pt
+}
+DIV.WebWorks_TOC_Level3 {
+	MARGIN-LEFT: 36pt
+}
+DIV.WebWorks_TOC_Level4 {
+	MARGIN-LEFT: 48pt
+}
+DIV.WebWorks_TOC_Level5 {
+	MARGIN-LEFT: 60pt
+}
+DIV.WebWorks_TOC_Level6 {
+	MARGIN-LEFT: 72pt
+}
+DIV.WebWorks_TOC_Level7 {
+	MARGIN-LEFT: 84pt
+}
+DIV.WebWorks_TOC_Level8 {
+	MARGIN-LEFT: 96pt
+}
+DIV.WebWorks_TOC_Level9 {
+	MARGIN-LEFT: 108pt
+}
+DIV.WebWorks_TOC_Level10 {
+	MARGIN-LEFT: 120pt
+}
+H2.WebWorks_Index_Title {
+=09
+}
+DIV.WebWorks_Index_Group {
+=09
+}
+A.WebWorks_Index_Link {
+=09
+}
+DIV.WebWorks_Index_Level1 {
+	MARGIN-LEFT: 12pt
+}
+DIV.WebWorks_Index_Level2 {
+	MARGIN-LEFT: 24pt
+}
+DIV.WebWorks_Index_Level3 {
+	MARGIN-LEFT: 36pt
+}
+DIV.WebWorks_Index_Level4 {
+	MARGIN-LEFT: 48pt
+}
+DIV.WebWorks_Index_Level5 {
+	MARGIN-LEFT: 60pt
+}
+DIV.WebWorks_Index_Level6 {
+	MARGIN-LEFT: 72pt
+}
+DIV.WebWorks_Index_Level7 {
+	MARGIN-LEFT: 84pt
+}
+DIV.WebWorks_Index_Level8 {
+	MARGIN-LEFT: 96pt
+}
+DIV.WebWorks_Index_Level9 {
+	MARGIN-LEFT: 108pt
+}
+DIV.WebWorks_Index_Level10 {
+	MARGIN-LEFT: 120pt
+}
+DIV.WebWorks_Breadcrumbs {
+	FONT-FAMILY: sans-serif; COLOR: #999999; FONT-SIZE: 10pt
+}
+A.WebWorks_Breadcrumb_Link {
+	TEXT-DECORATION: none
+}
+DIV.WebWorks_MiniTOC {
+	BORDER-BOTTOM: #000000 1px solid; BORDER-LEFT: #000000 1px solid; =
+PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #eeeeee; PADDING-LEFT: 10px; =
+PADDING-RIGHT: 10px; FONT-FAMILY: sans-serif; BORDER-TOP: #000000 1px =
+solid; BORDER-RIGHT: #000000 1px solid; PADDING-TOP: 10px
+}
+A.WebWorks_MiniTOC_Link {
+	TEXT-DECORATION: none
+}
+DIV.WebWorks_MiniTOC_Level1 {
+	MARGIN-LEFT: 0pt
+}
+DIV.WebWorks_MiniTOC_Level2 {
+	MARGIN-LEFT: 12pt
+}
+DIV.WebWorks_MiniTOC_Level3 {
+	MARGIN-LEFT: 24pt
+}
+DIV.WebWorks_MiniTOC_Level4 {
+	MARGIN-LEFT: 36pt
+}
+DIV.WebWorks_MiniTOC_Level5 {
+	MARGIN-LEFT: 48pt
+}
+DIV.WebWorks_MiniTOC_Level6 {
+	MARGIN-LEFT: 60pt
+}
+DIV.WebWorks_MiniTOC_Level7 {
+	MARGIN-LEFT: 72pt
+}
+DIV.WebWorks_MiniTOC_Level8 {
+	MARGIN-LEFT: 84pt
+}
+DIV.WebWorks_MiniTOC_Level9 {
+	MARGIN-LEFT: 96pt
+}
+DIV.WebWorks_MiniTOC_Level10 {
+	MARGIN-LEFT: 108pt
+}
+TD.WebWorks_Company_Logo_Top {
+	TEXT-ALIGN: left
+}
+TD.WebWorks_Company_Name_Top {
+	TEXT-ALIGN: left; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+TD.WebWorks_Company_Phone_Top {
+	TEXT-ALIGN: left; FONT-SIZE: 12px
+}
+TD.WebWorks_Company_Fax_Top {
+	TEXT-ALIGN: left; FONT-SIZE: 12px
+}
+TD.WebWorks_Company_Email_Top {
+	TEXT-ALIGN: left; FONT-SIZE: 12px
+}
+TD.WebWorks_Company_Logo_Bottom {
+	TEXT-ALIGN: left
+}
+TD.WebWorks_Company_Name_Bottom {
+	TEXT-ALIGN: left; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+TD.WebWorks_Company_Phone_Bottom {
+	TEXT-ALIGN: left; FONT-SIZE: 12px
+}
+TD.WebWorks_Company_Fax_Bottom {
+	TEXT-ALIGN: left; FONT-SIZE: 12px
+}
+TD.WebWorks_Company_Email_Bottom {
+	TEXT-ALIGN: left; FONT-SIZE: 12px
+}
+
+------=_NextPart_000_0000_01CC4E28.24750950--
